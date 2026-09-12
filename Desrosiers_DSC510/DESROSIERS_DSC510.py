@@ -6,8 +6,8 @@
 # Date: 12 September 2026
 # Description: This program outputs "Hello world!".
 # ~~~~~
-# Change Iteration: 1
-# Change(s) Made: Initial commit for Week 1 for Robert Desrosiers Jr.
+# Change Iteration: 2
+# Change(s) Made: Updated file to match naming requirements for the assignment.
 # Date of Change: 12 September 2026
 # Modifier: Robert Desrosiers Jr
 # Approved By: Robert Desrosiers Jr
