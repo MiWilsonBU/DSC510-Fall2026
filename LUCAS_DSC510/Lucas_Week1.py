@@ -1,12 +1,14 @@
-# ------------------------------------------------------------------
-# Program:     Fiber Optic Cable Installation Cost Calculator
-# Assignment:  Week 1
-# Author:      CANDACE LUCAS
-# Purpose:     Collects a company name and the number of feet of
-#              fiber optic cable needed, calculates the installation
-#              cost, and prints a receipt for the user.
-# ------------------------------------------------------------------
 
+# DSC 510
+# Week 2
+# Programming Assignment Week 2
+# Author Candace Lucas
+# 9/15/2026
+
+# Purpose: Collects a company name and the number of feet of fiber
+# optic cable needed, calculates the installation cost, and prints
+# a receipt for the user.
+# --------------------------------------------------
 # Price charged per foot of installed fiber optic cable
 PRICE_PER_FOOT = 0.95
 
