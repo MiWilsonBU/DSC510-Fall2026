@@ -24,7 +24,7 @@ total_cost = feet_requested * COST_PER_FOOT
 # formatted receipt for the user
 print()
 print("=" * 45)
-print("           INSTALLATION RECEIPT")
+print("           INSTALLATION RECEIPT ")
 print("=" * 45)
 print(f"Company:            {company_name}")
 print(f"Feet of Cable:      {feet_requested:.2f} ft")
