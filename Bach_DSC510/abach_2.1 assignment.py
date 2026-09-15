@@ -11,6 +11,12 @@ Change Log:
     Date of change: 9/14/2026
     Author: Andrew Bach
     Change Approved by: Andrew Bach
+
+    Change: 2
+    Changes made: Fixed a bug in approving the order
+    Date of change: 9/14/2026
+    Author: Andrew Bach
+    Change Approved by: Andrew Bach
 """
 import locale
 locale.setlocale(locale.LC_ALL, 'C')
@@ -37,6 +43,7 @@ def get_company():
 
 def get_order_quantity():
     quantity = 0
+    total = 0
 
     while quantity <= 0:
         try:
@@ -52,7 +59,7 @@ def get_order_quantity():
             user_input = input("Would you like to proceed? (Y/N): ").upper()
 
             if user_input in ("N", "NO", "NOPE"):
-                continue
+                quantity = 0
 
         except ValueError:
             print("An invalid value was entered, please enter a numeric value for your order.")
