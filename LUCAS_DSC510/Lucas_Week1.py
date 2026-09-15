@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------
 # Program:     Fiber Optic Cable Installation Cost Calculator
 # Assignment:  Week 1
-# Author:      Candace Lucas
+# Author:      CANDACE LUCAS
 # Purpose:     Collects a company name and the number of feet of
 #              fiber optic cable needed, calculates the installation
 #              cost, and prints a receipt for the user.
