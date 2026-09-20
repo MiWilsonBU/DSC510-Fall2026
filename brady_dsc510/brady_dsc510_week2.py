@@ -7,24 +7,24 @@
 #              will then calculate their cost and print out a human-readable receipt
 from typing import Final
 
-# Cost of Fiber Optic cable
+# Fixed cost of Fiber Optic cable
 FIBER_OPTIC_COST: Final[float] = 0.95
 
 def main():
-    company_name = input('Welcome: Please input your company name: ')
-    fiber_optic_cable_quantity = int(input('Please input quantity of fiber optic cable by feet: '))
+    company_name = input("Welcome: Please input your company name: ")
+    fiber_optic_cable_quantity = int(input("Please input quantity of fiber optic cable by feet: "))
 
     # Calculate the total cost for our user
     total_cost = fiber_optic_cable_quantity * FIBER_OPTIC_COST
 
     # Print Receipt
-    print('--------------------------------------------------')
-    print(f'Receipt for {company_name}')
+    print("--------------------------------------------------")
+    print(f"Receipt for {company_name}")
     print()
     print(f"{fiber_optic_cable_quantity}x Fiber Optic Cable (per foot): \t\t${total_cost}")
     print()
-    print('Thank you for shopping with us!')
-    print('--------------------------------------------------')
+    print("Thank you for shopping with us!")
+    print("--------------------------------------------------")
 
     return
 
