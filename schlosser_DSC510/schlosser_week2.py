@@ -24,6 +24,7 @@ company_name = input("Enter Company Name: ")
 feet_of_cable = float(input("Enter the Number of Feet of Cable: "))
 # print (feet_of_cable)
 
+
 #Calculate the installation cost of fiber optic cable by multiplying the number of feet requested by the user by $.95 per foot
 cost_per_foot = 0.95
 # print (cost_per_foot)
