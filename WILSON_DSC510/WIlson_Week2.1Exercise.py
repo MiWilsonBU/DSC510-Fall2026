@@ -16,4 +16,4 @@ FOC_TotCost = FOC_FT * FOC_CostperFT  #calculating the total price for the invoi
 print("The follow is a quote for our favorite customer: ", Comp_Name)  #invoice header is name entered
 print("The total length of Fiber Optic Cable to be installed is ", f"{FOC_FT:,.2f}"," Feet")  #telling the customer how much product we are costing
 print("The total cost of fiber optic cable: $", f"{FOC_TotCost:,.2f}")  #total cost to the customer
-print("The current price per foot: ", FOC_CostperFT,"$/Foot")  #giving them the current cost per foot
+print("The current price per foot: ", FOC_CostperFT,"$/Foot")  #giving them the current cost per foot.
