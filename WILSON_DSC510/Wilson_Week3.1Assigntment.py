@@ -12,7 +12,15 @@ Comp_Name = input("What is your company's name? ")  #Asking for the customers na
 try:  #creating the beginning of the try block
     FOC_FT = float(input("What length of Fiber Optic Cable, in feet, is being installed? "))  #asking for length of cable and labeling it float for calculation purposes
 
-    FOC_CostperFT = 0.95 # current price per foot for cabling
+    if FOC_FT > 500:
+        FOC_CostperFT = 0.55 # current price per foot for cabling
+    elif FOC_FT > 250:
+        FOC_CostperFT = 0.75  # current price per foot for cabling
+    elif FOC_FT > 100:
+        FOC_CostperFT = 0.85  # current price per foot for cabling
+    elif FOC_FT > 0:
+        FOC_CostperFT = 0.95  # current price per foot for cabling
+
     FOC_TotCost = FOC_FT * FOC_CostperFT  #calculating the total price for the invoice
 
 
