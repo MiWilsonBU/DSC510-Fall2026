@@ -1,0 +1,36 @@
+#DSC 510
+#Week 4
+#Programming Assignment Week 4
+#Author Michael Wilson
+#10/04/2026
+
+"""The purpose of this program is to welcome a user, Retrieve their company name using an input,
+retrieve the # of feet of fiber optic cable, Calculate and produce an invoice based on the user's input and the current price per sq/ft """
+
+print("Welcome to the Mike's House of Fiber Optic Cable!")  #we are welcoming the user as we are nice people and appreciate their business
+Comp_Name = input("What is your company's name? ")  #Asking for the customers name for the invoice header
+try:  #creating the beginning of the try block
+
+    def calc(ft, cpf):  #defining the number and order of variables
+        total = ft * cpf  #defining what the function should do with those variables
+        return total  #sending the value back to the code that called for it
+
+    FOC_FT = float(input("What length of Fiber Optic Cable, in feet, is being installed? "))  #asking for length of cable and labeling it float for calculation purposes
+
+    if FOC_FT > 500:
+        FOC_CostperFT = 0.55 # current price per foot for cabling
+    elif FOC_FT > 250:
+        FOC_CostperFT = 0.75  # current price per foot for cabling
+    elif FOC_FT > 100:
+        FOC_CostperFT = 0.85  # current price per foot for cabling
+    elif FOC_FT > 0:
+        FOC_CostperFT = 0.95  # current price per foot for cabling
+
+     FOC_TotCost = calc(FOC_FT,FOC_CostperFT) #calls the formula above to calculate the total price for the invoice
+
+    print("The follow is a quote for our favorite customer: ", Comp_Name)  #invoice header is name entered
+    print("The total length of Fiber Optic Cable to be installed is ", f"{FOC_FT:,.2f}"," Feet")  #telling the customer how much product we are costing
+    print("The total cost of fiber optic cable: $", f"{FOC_TotCost:,.2f}")  #total cost to the customer
+    print("The current price per foot: ", FOC_CostperFT,"$/Foot")  #giving them the current cost per foot.
+except:
+    print("Please enter a numeric value") # the result if the try block fails
